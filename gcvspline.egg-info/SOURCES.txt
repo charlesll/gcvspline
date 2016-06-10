@@ -1,5 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
 setup.py
 gcvspline/__init__.py
+gcvspline/gcvspl.f
+gcvspline/gcvspl.so
 gcvspline/gcvspline.py
 gcvspline.egg-info/PKG-INFO
 gcvspline.egg-info/SOURCES.txt

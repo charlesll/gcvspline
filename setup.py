@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='gcvspline',
-      version='0.1',
+      version='0.2',
       description='A wrapper for gcvspl.f, a FORTRAN package for generalized, cross-validatory spline smoothing and differentiation.',
       url='http://github.com/storborg/funniest',
       author='Charles Le Losq',
