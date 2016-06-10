@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include docs/
+include example/
+include gcvspline/*.f
+include gcvspline/*.so
+include gcvspline/*.so.dSYM

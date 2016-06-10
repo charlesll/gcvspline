@@ -1,0 +1,8 @@
+setup.py
+gcvspline/__init__.py
+gcvspline/gcvspline.py
+gcvspline.egg-info/PKG-INFO
+gcvspline.egg-info/SOURCES.txt
+gcvspline.egg-info/dependency_links.txt
+gcvspline.egg-info/not-zip-safe
+gcvspline.egg-info/top_level.txt
