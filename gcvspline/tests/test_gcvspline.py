@@ -2,12 +2,12 @@ import numpy as np
 from matplotlib import pyplot as plt
 from gcvspline import gcvspline, splderivative
 
-def test_gcvspline():
+def test_sanity():
     # generating a dumb dataset for using the spline
     x = np.linspace(0, 100, 1000)
     y = 0.5 + x*30 - 0.001*x**2 + 4.5e-4 * x**3 + 1.64e-6*x**4 +500*np.cos(x/8)
-    noise =np.random.normal(scale=300, size=len(y))# adding noise ,  a lot!
-    y = y+ noise # adding noise ,  a lot!
+    noise = np.random.normal(scale=300, size=len(y))# adding noise ,  a lot!
+    y = y + noise # adding noise ,  a lot!
 
     # now using the spline,  we are going to store results for different smoothing
     # factors in an array y_fit
@@ -23,3 +23,4 @@ def test_gcvspline():
 
     # FIXME: add some assertions. 
     print(y_fit)
+    # if no expection were raised the code at least ran.
