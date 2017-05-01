@@ -9,7 +9,7 @@ It assumes that you already have the good path in your pathway
 gcvspl.so should exist in this path...
 """
 
-import gcvspl
+from . import _gcvspl as gcvspl
 import numpy as np
 
 def gcvspline(x,y,ese,VAL,**options):
