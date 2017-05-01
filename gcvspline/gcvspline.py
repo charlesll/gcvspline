@@ -147,11 +147,6 @@ def splderivative(xfull,xparse,cparse,**options):
     else:
         IDER = options.get("IDER")
         
-    q = np.zeros((2*splineorder))  # working array
-    ycalc = np.zeros((len(xfull))) # Output array
-    
-    # we loop other xfull to create the output values
-    for i in range(len(xfull)):
-        ycalc[i] = gcvspl.splder(IDER,splineorder,xfull[i],xparse,cparse,L)
-    
+    ycalc = gcvspl.splderv(IDER,splineorder,xfull,xparse,cparse,L)
+
     return ycalc
