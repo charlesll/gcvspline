@@ -1,2 +1,2 @@
 from .gcvspline import gcvspline, splderivative
-from .gcvspline2 import GCVSpline
+from .gcvspline2 import *
