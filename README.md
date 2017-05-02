@@ -31,12 +31,10 @@ gcvspline.py is provided as is, use at your own risks.
 
 ## Requirements
 
-f2py, and a working fortran compiler, e.g. gfortran
+numpy
 
 ## Installation
 
-TO BE COMPLETED
-
-f2py -c -m gcvspl gcvspl.f
+pip install .
 
 ## Documentation
