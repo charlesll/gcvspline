@@ -1504,3 +1504,19 @@ c
 c
       goto 4
       end
+
+c     Vectorized version of splder
+      subroutine splderv(ider, m, n, t, x, c,
+     &         l, q, y, nt)
+      implicit double precision (o-z, a-h)
+      parameter (zero = 0d0, one = 1d0)
+cf2py intent(out) :: y
+cf2py intent(hide) :: q
+c
+c***  Derivatives of IDER.ge.2*M are alway zero
+c
+      dimension x(n), c(n), q(2 * m), y(nt), t(nt)
+      do 15 i = 1, nt
+      y(i) = splder(ider, m, n, t(i), x, c, l, q)
+   15 continue
+      end
