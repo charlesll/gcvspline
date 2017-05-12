@@ -31,7 +31,7 @@ gcvspline.py is provided as is, use at your own risks.
 
 ## Requirements
 
-numpy
+numpy >= 1.12.1 (due to a f2py bug in 1.12.0)
 
 ## Installation
 
