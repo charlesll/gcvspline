@@ -1,7 +1,7 @@
 include README.md
 include LICENSE
-include docs/
-include example/
+include docs/*.rst
+include example/*.py
 include gcvspline/*.f
 include gcvspline/*.so
 include gcvspline/*.so.dSYM

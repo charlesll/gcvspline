@@ -4,9 +4,9 @@ from numpy.distutils.extension import Extension
 extension = Extension("gcvspline._gcvspl", ["gcvspline/gcvspl.f"])
 
 setup(name='gcvspline',
-      version='0.2',
+      version='0.3',
       description='A wrapper for gcvspl.f, a FORTRAN package for generalized, cross-validatory spline smoothing and differentiation.',
-      url='http://github.com/storborg/funniest',
+      url='https://github.com/charlesll/gcvspline',
       author='Charles Le Losq',
       author_email='charles.lelosq@anu.edu.au',
       license='GNU-GPLv3',
