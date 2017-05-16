@@ -13,9 +13,9 @@ import numpy as np
 PARAMETERS= \
 """
             w: array_like
-                inverted variance of observations, e.g. 1.0 / var(y, axis=1)
+                inverted standard derivation of observations, e.g. 1.0 / std(y, axis=1)
             w1: array_like
-                inverted variance of datasets, e.g. 1.0 / var(y, axis=0)
+                inverted standard derivation of datasets, e.g. 1.0 / std(y, axis=0)
             kind : int, or str
                 kind / order of spline, NOTE: different from the internal gcvspline parameter.
             nc  : int
@@ -76,9 +76,9 @@ class GCVSplineBase(object):
             bbox = (x[0], x[-1])
 
         wx = np.ones(y.shape[0])
-        wx[...] = w
+        wx[...] = w ** 2
         wy = np.ones(y.shape[1])
-        wy[...] = w1
+        wy[...] = w1 ** 2
 
         if nc is None: nc = len(x)
 
