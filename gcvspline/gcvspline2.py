@@ -11,11 +11,16 @@ from . import _gcvspl as gcvspl
 import numpy as np
 
 PARAMETERS= \
-"""
+r"""
             w: array_like
-                inverted standard derivation of observations, e.g. 1.0 / std(y, axis=1)
+                Relative weights of data point in spline fitting.
+                A convenient choice is to use the inverted standard derivation of observations,
+                  e.g. :math:`\sigma_n^{-1}` if y = y0 + n. Usually the distribution of n is not
+                  known and some estimated relative weight can be used, e.g. 1.0.
+                `self.wx = w ** 2`. 
             w1: array_like
-                inverted standard derivation of datasets, e.g. 1.0 / std(y, axis=0)
+                Relative weights of each dataset in spline fitting default is 1.0.
+                `self.wy = w1[None, :] ** 2`. See `w`.
             kind : int, or str
                 kind / order of spline, NOTE: different from the internal gcvspline parameter.
             nc  : int
@@ -106,6 +111,8 @@ class GCVSplineBase(object):
         self.x = x
         self.c = c
         self.wk = wk
+        self.wy = wy[None, :]
+        self.wx = wx[:, None]
         self.splorder = splorder
         self.L = 1
         self.bbox = np.array(bbox, dtype='f8')
@@ -118,7 +125,7 @@ class GCVSplineBase(object):
 
     @property
     def msr(self):
-        """ Mean Squared Residual """
+        r""" Mean Squared Residual :math:`\sigma^2 (y - \hat{f}(x))` """
         return self.wk[1]
 
     @property
@@ -128,22 +135,24 @@ class GCVSplineBase(object):
 
     @property
     def p(self):
-        """ Smoothing Parameter p """
+        """ Smoothing Parameter p. p degenerated with the weights. """
         return self.wk[3]
 
     @property
     def mse(self):
-        """ Estimated MSE. Different formula for MD == 3 """
+        """ Estimated MSE. mse + msr = variance_metric. """
         return self.wk[4]
 
     @property
-    def error_variance(self):
-        """ Gauss-Markov error variance """
+    def variance_metric(self):
+        """ Gauss-Markov error variance metric. """
         return self.wk[5]
 
     @property
     def variance(self):
-        return self.wk[6:] / self.wk[5]
+        """ Estimated variance of each data entry.
+            Scaling the weights (after converting to variance) by variance_metric. """
+        return self.wk[5] / (self.wy * self.wx)
 
     def __call__(self, x, nu=0, ext=None):
         x = np.array(x)
@@ -177,7 +186,7 @@ class SmoothedNSpline(GCVSplineBase):
             ----------
             %s
             p : float
-                smoothing parameter
+                smoothing parameter. The parameter p is degenerate with weights.
         """
         GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=p, MD=1)
 
@@ -192,17 +201,20 @@ class GCVSmoothedNSpline(GCVSplineBase):
         GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=0, MD=2)
 
 class MSESmoothedNSpline(GCVSplineBase):
-    def __init__(self, x, y, variance, w=1, w1=1, nc=None, kind='cubic', bbox=None, ext=0):
-        """ Natural Spline fitting with known error variance.
+    def __init__(self, x, y, w=1, w1=1, nc=None, kind='cubic', bbox=None, ext=0, variance_metric=1.0):
+        """ Natural Spline fitting with known variance_metric, minimizing the MSE.
 
             Parameters
             ----------
             %s
-            variance : float
-                smoothing terms of expected variance
-
+            variance_metric: float
+                smoothing terms of variance metric. The default value of 1.0 is `appropriate`
+                when `w` and `w1` are already scaled as the inverted std error of the noise, 
+                and when the underlying model is a spline (mse == 0).
+                Larger number produces smoother results. The sets the same named property of
+                GCVSmoothedNSpline.
         """
-        GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=variance, MD=3)
+        GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=variance_metric, MD=3)
 
 class DOFSmoothedNSpline(GCVSplineBase):
     def __init__(self, x, y, dof, w=1, w1=1, nc=None, kind='cubic', bbox=None, ext=0):
@@ -212,9 +224,9 @@ class DOFSmoothedNSpline(GCVSplineBase):
             ----------
             %s
             dof : float
-                desired effective degrees of freedom.
+                desired effective degrees of freedom of smoothing. Large number means more smoothing.
         """
-        GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=dof, MD=3)
+        GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=dof, MD=4)
 
 def adddocstring(klass):
     klass.__init__.__doc__ = klass.__init__.__doc__ % PARAMETERS.strip()
