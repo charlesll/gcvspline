@@ -1,7 +1,8 @@
 include README.md
 include LICENSE
-include docs/*.rst
+include runtests.py
 include example/*.py
+include example/*.ipynb
 include gcvspline/*.f
-include gcvspline/*.so
-include gcvspline/*.so.dSYM
+include gcvspline/*.py
+include gcvspline/tests/*.py

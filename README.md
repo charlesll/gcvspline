@@ -4,7 +4,7 @@ Python wrapper of the gcv-spl Fortran library gcvspl.f, created by H.J. Woltring
 
 Reference: Woltring, 1986, A FORTRAN package for generalized, cross-validatory spline smoothing and differentiation. Adv. Eng. Softw. 8:104-113. 
 
-Contributors:
+## Contributors:
 
 Charles Le Losq, the Australian National University (RSES), Canberra.
 
