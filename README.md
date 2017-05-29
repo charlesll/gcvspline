@@ -14,24 +14,11 @@ contact: charles.lelosq@anu.edu.au or yfeng1@berkeley.edu
 
 ## Licence information
 
-The gcvspline wrapper is provided under a GNU GPL2 licence, however please take into account the Licence header in gcvspl.f for full licence information:
-
-From the header of gcvspl.f:
-
-"(C) COPYRIGHT 1985, 1986: H.J. Woltring
-This software is copyrighted, and may be  copied  for  exercise,
-study  and  use  without authorization from the copyright owner(s), in
-compliance with paragraph 16b of  the  Dutch  Copyright  Act  of  1912
-("Auteurswet  1912").  Within the constraints of this legislation, all
-forms of academic and research-oriented excercise, study, and use  are
-allowed,  including  any  necessary modifications.  Copying and use as
-object for commercial exploitation are not allowed without  permission
-of  the  copyright owners, including those upon whose work the package
-is based."
+The gcvspline wrapper is provided under a GNU GPL3 license. The license of the fortran code GCVSPL.f is different, retraining commercial use. See the LICENSE file for further details.
 
 ## Disclaimer
 
-gcvspline.py is provided as is, use at your own risks.
+gcvspline is provided as is, use at your own risks.
 
 ## Requirements
 

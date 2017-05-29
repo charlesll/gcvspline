@@ -1,3 +1,18 @@
+The GCVSPL.f code is provided under the following licence:
+
+"(C) COPYRIGHT 1985, 1986: H.J. Woltring
+This software is copyrighted, and may be  copied  for  exercise,
+study  and  use  without authorization from the copyright owner(s), in
+compliance with paragraph 16b of  the  Dutch  Copyright  Act  of  1912
+("Auteurswet  1912").  Within the constraints of this legislation, all
+forms of academic and research-oriented excercise, study, and use  are
+allowed,  including  any  necessary modifications.  Copying and use as
+object for commercial exploitation are not allowed without  permission
+of  the  copyright owners, including those upon whose work the package
+is based."
+
+The Python codes are provided under a GNU GPL3 license:
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
