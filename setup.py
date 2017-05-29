@@ -5,9 +5,9 @@ extension = Extension("gcvspline._gcvspl", ["gcvspline/gcvspl.f"])
 
 setup(name='gcvspline',
       version='0.3',
-      description='A wrapper for gcvspl.f, a FORTRAN package for generalized, cross-validatory spline smoothing and differentiation.',
+      description='A Python wrapper for gcvspl.f, a FORTRAN package for generalized, cross-validatory spline smoothing and differentiation.',
       url='https://github.com/charlesll/gcvspline',
-      author='Charles Le Losq',
+      author='Charles Le Losq and Yu Feng',
       author_email='charles.lelosq@anu.edu.au',
       license='GNU-GPLv3',
       packages=['gcvspline', 'gcvspline.tests'],
