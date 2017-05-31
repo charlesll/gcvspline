@@ -229,7 +229,12 @@ class DOFSmoothedNSpline(GCVSplineBase):
         GCVSplineBase.__init__(self, x=x, y=y, w=w, w1=w1, nc=nc, kind=kind, bbox=bbox, ext=ext, VAL=dof, MD=4)
 
 def adddocstring(klass):
-    klass.__init__.__doc__ = klass.__init__.__doc__ % PARAMETERS.strip()
+    try:
+        # for python 3
+        klass.__init__.__doc__ = klass.__init__.__doc__ % PARAMETERS.strip()
+    except:
+        # for python 2
+        klass.__init__.__func__.__doc__ = klass.__init__.__doc__ % PARAMETERS.strip()
 
 adddocstring(GCVSplineBase)
 adddocstring(SmoothedNSpline)

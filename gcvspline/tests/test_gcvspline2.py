@@ -33,7 +33,7 @@ def test_spline_mse():
     x = np.linspace(-10, 10, 40)
     y = f(x)
 
-    spl = MSESmoothedNSpline(x, y, kind='cubic', variance=0.001)
+    spl = MSESmoothedNSpline(x, y, kind='cubic', variance_metric=0.001)
     y1 = spl(x)
 
     # since the function is cubic, cubic spl shall work perfectly.
