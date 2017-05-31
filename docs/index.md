@@ -35,6 +35,11 @@ gcvspline is provided as is, use at your own risks.
 
 Functions are documented and a call with help() of pydoc will provide all the relevant informations.
 
+- gcvspline and splderivative that are direct wrappers of the FORTRAN functions. See gcvspline_fortran_interface.py for an example.
+
+- Scipy-like interface of several functions: GCVSmoothedNSpline, MSESmoothedNSpline, DOFSmoothedNSpline, SmoothedNSpline. See ./examples/gcvspline_scipylike_interface.ipynb for examples.
+
+
 ## Examples
 
 Examples are available in the example folder of gcvspline.

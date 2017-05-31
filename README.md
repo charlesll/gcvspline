@@ -30,4 +30,4 @@ pip install . or pip install gcvspline to get the latest tagged version.
 
 ## Documentation
 
-Documentation is in progress. A scipy-like interface will be provided.
+Documentation is provided at [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://charlesll.github.io/gcvspline/)
