@@ -4,6 +4,12 @@
 # Setuptools distribution folder.
 /dist/
 
+# no need of the site folder in the master repo
+/site/
+
+# hidding the folder for building the conda installer
+/conda/
+
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
 

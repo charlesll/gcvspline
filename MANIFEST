@@ -3,8 +3,8 @@ LICENSE
 README.md
 runtests.py
 setup.py
-example/example.py
-example/gcvspline2.ipynb
+example/gcvspline_fortran_interface.py
+example/gcvspline_scipylike_interface.ipynb
 gcvspline/__init__.py
 gcvspline/gcvspl.f
 gcvspline/gcvspline.py

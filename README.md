@@ -26,7 +26,13 @@ numpy >= 1.12.1 (due to a f2py bug in 1.12.0)
 
 ## Installation
 
-pip install . or pip install gcvspline to get the latest tagged version.
+pip install . or to get the latest tagged version:
+
+	pip install gcvspline
+
+or
+
+	conda install gcvspline
 
 ## Documentation
 

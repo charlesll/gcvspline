@@ -8,7 +8,13 @@ Code available at https://github.com/charlesll/gcvspline
 
 ## Installation
 
-pip install . or pip install gcvspline to get the latest tagged version.
+pip install . or to get the latest tagged version:
+
+	pip install gcvspline
+
+or
+
+	conda install gcvspline
 
 ## Licence information
 
