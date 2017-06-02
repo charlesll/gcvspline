@@ -14,7 +14,9 @@ pip install . or to get the latest tagged version:
 
 or
 
-	conda install gcvspline
+	conda install -c charlesll gcvspline=0.4
+
+Note that the conda install only works for linux 64 at this time
 
 ## Licence information
 
