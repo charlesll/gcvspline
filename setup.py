@@ -11,5 +11,6 @@ setup(name='gcvspline',
       author_email='charles.lelosq@anu.edu.au',
       license='GNU-GPLv3',
       packages=['gcvspline', 'gcvspline.tests'],
+      install_requires=['numpy>=1.12'],
       ext_modules=[extension],
       zip_safe=False)
