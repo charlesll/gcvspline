@@ -10,5 +10,4 @@ addons:
 install:
   - pip install .
 # command to run tests
-script: 
-  - python runtests.py 
+script: pytest
