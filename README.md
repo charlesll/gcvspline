@@ -38,6 +38,16 @@ or
 
 Note that the conda install only works for linux 64 at this time
 
+If the installation fails and this seems related to a problem with FORTRAN compilation, please check the status of your FORTRAN compiler.
+
+The fastest way will be to upload any fortran code and try building it. 
+
+OSX Sierra and High Sierra may run into problems with the assembler in some case, fixed by adding the line
+
+export PATH="/usr/bin/$PATH"
+
+in your .bash_profile file.
+
 ## Documentation
 
 Documentation is provided at [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://charlesll.github.io/gcvspline/)
