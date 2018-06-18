@@ -96,7 +96,7 @@ test_script:
 
 after_build:
   ## This step builds your wheels.
-  - "%PYTHON%\\python.exe setup.py bdist_wheel"
+  - "python setup.py bdist_wheel"
 
   # Remove old or huge cache files to hopefully not exceed the 1GB cache limit.
   #
