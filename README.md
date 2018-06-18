@@ -28,15 +28,15 @@ numpy >= 1.12.1 (due to a f2py bug in 1.12.0)
 
 ## Installation
 
-pip install . or to get the latest tagged version:
+Installation through pip is recommended:
 
 	pip install gcvspline
 
-or
+Pip wheels for Python 2.7, 3.4 and 3.6 are provided for Windows users (only for Python 3.6 for 32 bit systems). Mac OS and Linux version are built from source and requires gfortran.
+
+Another option for Linux 64 bits is to us Conda: 
 
 	conda install -c charlesll gcvspline=0.4
-
-Note that the conda install only works for linux 64 at this time
 
 If the installation fails and this seems related to a problem with FORTRAN compilation, please check the status of your FORTRAN compiler.
 
