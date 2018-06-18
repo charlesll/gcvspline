@@ -92,9 +92,12 @@ build_script:
       }
 
 test_script:
-  python runtests.py -v -n -m %TEST_MODE% -- --junitxml=%cd%\junit-results.xml
+  python runtests.py 
 
 after_build:
+  ## This step builds your wheels.
+  - "%PYTHON%\\python.exe setup.py bdist_wheel"
+
   # Remove old or huge cache files to hopefully not exceed the 1GB cache limit.
   #
   # If the cache limit is reached, the cache will not be updated (of not even
@@ -102,6 +105,7 @@ after_build:
   # current and having a cache at all.
   # NB: This is done only `on_success` since the cache in uploaded only on
   # success anyway.
+ 
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -mtime +360 -delete
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -size +10M -delete
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -empty -delete
