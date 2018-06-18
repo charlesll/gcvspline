@@ -92,7 +92,7 @@ build_script:
       }
 
 test_script:
-  python runtests.py 
+  - echo Skipped Tests 
 
 after_build:
   # If the cache limit is reached, the cache will not be updated (of not even
