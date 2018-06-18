@@ -68,7 +68,7 @@ install:
      print(sys.platform, platform.machine(), struct.calcsize('P') * 8, )"
 
   # Upgrade to the latest pip and numpy.
-  - 'python -m pip install -U pip setuptools wheel numpy'
+  - 'python -m pip install -U pip setuptools wheel numpy runtests nose'
 
 build_script:
   # Here, we add MinGW to the path to be able to link an GCVSPLINE.dll

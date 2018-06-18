@@ -8,6 +8,7 @@ addons:
   apt_packages:
     - gfortran
 install:
+  - pip install runtests nose
   - pip install .
 # command to run tests
 script: pytest
