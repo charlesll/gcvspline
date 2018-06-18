@@ -95,11 +95,6 @@ test_script:
   python runtests.py 
 
 after_build:
-  ## This step builds your wheels.
-  - "python setup.py bdist_wheel"
-
-  # Remove old or huge cache files to hopefully not exceed the 1GB cache limit.
-  #
   # If the cache limit is reached, the cache will not be updated (of not even
   # created in the first run). So this is a trade of between keeping the cache
   # current and having a cache at all.
