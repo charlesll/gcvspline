@@ -1,66 +1,88 @@
 build/temp.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline/_gcvsplmodule.o: \
  build/src.linux-x86_64-3.6/gcvspline/_gcvsplmodule.c \
- /usr/include/python3.6m/Python.h /usr/include/python3.6m/patchlevel.h \
- /usr/include/python3.6m/pyconfig.h /usr/include/python3.6m/pymacconfig.h \
- /usr/include/python3.6m/pyport.h /usr/include/python3.6m/pymacro.h \
- /usr/include/python3.6m/pyatomic.h /usr/include/python3.6m/pymath.h \
- /usr/include/python3.6m/pytime.h /usr/include/python3.6m/object.h \
- /usr/include/python3.6m/pymem.h /usr/include/python3.6m/objimpl.h \
- /usr/include/python3.6m/typeslots.h /usr/include/python3.6m/pyhash.h \
- /usr/include/python3.6m/pydebug.h \
- /usr/include/python3.6m/bytearrayobject.h \
- /usr/include/python3.6m/bytesobject.h \
- /usr/include/python3.6m/unicodeobject.h \
- /usr/include/python3.6m/longobject.h \
- /usr/include/python3.6m/longintrepr.h \
- /usr/include/python3.6m/boolobject.h \
- /usr/include/python3.6m/floatobject.h \
- /usr/include/python3.6m/complexobject.h \
- /usr/include/python3.6m/rangeobject.h \
- /usr/include/python3.6m/memoryobject.h \
- /usr/include/python3.6m/tupleobject.h \
- /usr/include/python3.6m/listobject.h \
- /usr/include/python3.6m/dictobject.h \
- /usr/include/python3.6m/odictobject.h \
- /usr/include/python3.6m/enumobject.h /usr/include/python3.6m/setobject.h \
- /usr/include/python3.6m/methodobject.h \
- /usr/include/python3.6m/moduleobject.h \
- /usr/include/python3.6m/funcobject.h \
- /usr/include/python3.6m/classobject.h \
- /usr/include/python3.6m/fileobject.h /usr/include/python3.6m/pycapsule.h \
- /usr/include/python3.6m/traceback.h /usr/include/python3.6m/pystate.h \
- /usr/include/python3.6m/sliceobject.h \
- /usr/include/python3.6m/cellobject.h \
- /usr/include/python3.6m/iterobject.h /usr/include/python3.6m/genobject.h \
- /usr/include/python3.6m/descrobject.h /usr/include/python3.6m/warnings.h \
- /usr/include/python3.6m/weakrefobject.h \
- /usr/include/python3.6m/structseq.h \
- /usr/include/python3.6m/namespaceobject.h \
- /usr/include/python3.6m/codecs.h /usr/include/python3.6m/pyerrors.h \
- /usr/include/python3.6m/pyarena.h /usr/include/python3.6m/modsupport.h \
- /usr/include/python3.6m/pythonrun.h \
- /usr/include/python3.6m/pylifecycle.h /usr/include/python3.6m/ceval.h \
- /usr/include/python3.6m/sysmodule.h /usr/include/python3.6m/osmodule.h \
- /usr/include/python3.6m/intrcheck.h /usr/include/python3.6m/import.h \
- /usr/include/python3.6m/abstract.h /usr/include/python3.6m/bltinmodule.h \
- /usr/include/python3.6m/compile.h /usr/include/python3.6m/code.h \
- /usr/include/python3.6m/eval.h /usr/include/python3.6m/pyctype.h \
- /usr/include/python3.6m/pystrtod.h /usr/include/python3.6m/pystrcmp.h \
- /usr/include/python3.6m/dtoa.h /usr/include/python3.6m/fileutils.h \
- /usr/include/python3.6m/pyfpe.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/Python.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/patchlevel.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyconfig.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pymacconfig.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyport.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pymacro.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyatomic.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pymath.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pytime.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/object.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pymem.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/objimpl.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/typeslots.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyhash.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pydebug.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/bytearrayobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/bytesobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/unicodeobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/longobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/longintrepr.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/boolobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/floatobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/complexobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/rangeobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/memoryobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/tupleobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/listobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/dictobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/odictobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/enumobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/setobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/methodobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/moduleobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/funcobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/classobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/fileobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pycapsule.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/traceback.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pystate.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/sliceobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/cellobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/iterobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/genobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/descrobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/warnings.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/weakrefobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/structseq.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/namespaceobject.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/codecs.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyerrors.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyarena.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/modsupport.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pythonrun.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pylifecycle.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/ceval.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/sysmodule.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/osmodule.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/intrcheck.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/import.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/abstract.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/bltinmodule.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/compile.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/code.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/eval.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyctype.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pystrtod.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pystrcmp.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/dtoa.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/fileutils.h \
+ /home/charles/miniconda3/envs/py36/include/python3.6m/pyfpe.h \
  build/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline/fortranobject.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_common.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/numpyconfig.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/_numpyconfig.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_endian.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_cpu.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/utils.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/old_defines.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/__multiarray_api.h \
- /home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_interrupt.h
-commandline: -Ibuild/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline -I/home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m -c-Ibuild/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline -I/home/charles/py36/py36/lib/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_common.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/numpyconfig.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/_numpyconfig.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_endian.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_cpu.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/utils.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/old_defines.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/__multiarray_api.h \
+ /home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include/numpy/npy_interrupt.h
+commandline: -Ibuild/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline -I/home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include -I/home/charles/miniconda3/envs/py36/include/python3.6m -c-Ibuild/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline -I/home/charles/miniconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include -I/home/charles/miniconda3/envs/py36/include/python3.6m

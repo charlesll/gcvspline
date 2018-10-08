@@ -1,10 +1,1 @@
-[
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline.py::test_sanity",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_cv",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_fixed",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_mse",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_dof",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_raise",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_zeros",
-  "build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py::test_spline_consts"
-]
+[]

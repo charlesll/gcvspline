@@ -1,5 +1,6 @@
 from numpy.distutils.core import setup
 from numpy.distutils.extension import Extension
+#from setuptools import setup, Extension
 
 extension = Extension("gcvspline._gcvspl", ["gcvspline/gcvspl.f"])
 

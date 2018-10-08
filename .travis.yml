@@ -8,6 +8,7 @@ addons:
   apt_packages:
     - gfortran
 install:
+  - conda install libgfortran==1
   - pip install runtests nose
   - pip install .
 # command to run tests

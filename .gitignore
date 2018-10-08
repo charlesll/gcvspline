@@ -10,11 +10,18 @@
 # hidding the folder for building the conda installer
 /conda/
 
+# no build folder
+/build/
+
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
 
 # cache files
 /.cache/
+/.pytest_cache/
+
+# build log
+build.log
 
 # Mac related files...
 .DS_Store

@@ -1,48 +1,5 @@
 running build
-running config_cc
-unifing config_cc, config, build_clib, build_ext, build commands --compiler options
-running config_fc
-unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
-running build_src
-build_src
-building extension "gcvspline._gcvspl" sources
-f2py options: []
-  adding 'build/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline/fortranobject.c' to sources.
-  adding 'build/src.linux-x86_64-3.6/build/src.linux-x86_64-3.6/gcvspline' to include_dirs.
-  adding 'build/src.linux-x86_64-3.6/gcvspline/_gcvspl-f2pywrappers.f' to sources.
-build_src: building npy-pkg config files
 running build_py
 running build_ext
-customize UnixCCompiler
-customize UnixCCompiler using build_ext
-get_default_fcompiler: matching types: '['gnu95', 'intel', 'lahey', 'pg', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor']'
-customize Gnu95FCompiler
-Found executable /usr/bin/gfortran
-customize Gnu95FCompiler
-customize Gnu95FCompiler using build_ext
-running install
-running install_lib
-creating /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages
-creating /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline
-copying build/lib.linux-x86_64-3.6/gcvspline/_gcvspl.cpython-36m-x86_64-linux-gnu.so -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline
-creating /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests
-copying build/lib.linux-x86_64-3.6/gcvspline/tests/test_gcvspline2.py -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests
-copying build/lib.linux-x86_64-3.6/gcvspline/tests/test_gcvspline.py -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests
-copying build/lib.linux-x86_64-3.6/gcvspline/tests/__init__.py -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests
-copying build/lib.linux-x86_64-3.6/gcvspline/gcvspline2.py -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline
-copying build/lib.linux-x86_64-3.6/gcvspline/gcvspline.py -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline
-copying build/lib.linux-x86_64-3.6/gcvspline/__init__.py -> /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline
-byte-compiling /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline2.py to test_gcvspline2.cpython-36.pyc
-byte-compiling /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests/test_gcvspline.py to test_gcvspline.cpython-36.pyc
-byte-compiling /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/tests/__init__.py to __init__.cpython-36.pyc
-byte-compiling /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/gcvspline2.py to gcvspline2.cpython-36.pyc
-byte-compiling /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/gcvspline.py to gcvspline.cpython-36.pyc
-byte-compiling /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline/__init__.py to __init__.cpython-36.pyc
-running install_egg_info
-Writing /run/media/charles/DATA/Documents/gcvspline/build/testenv/lib/python3.6/site-packages/gcvspline-0.4-py3.6.egg-info
-running install_clib
-customize UnixCCompiler
-/usr/lib64/python3.6/distutils/dist.py:261: UserWarning: Unknown distribution option: 'install_requires'
-  warnings.warn(msg)
-/usr/lib64/python3.6/distutils/dist.py:261: UserWarning: Unknown distribution option: 'zip_safe'
-  warnings.warn(msg)
+building 'gcvspline._gcvspl' extension
+error: unknown file type '.f' (from 'gcvspline/gcvspl.f')

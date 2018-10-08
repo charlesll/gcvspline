@@ -1,1 +1,4 @@
-{}
+{
+  "gcvspline/tests/test_gcvspline.py": true,
+  "gcvspline/tests/test_gcvspline2.py": true
+}
