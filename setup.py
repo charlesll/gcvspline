@@ -3,7 +3,7 @@ from numpy.distutils.extension import Extension
 
 extension = Extension("gcvspline._gcvspl", ["gcvspline/gcvspl.f"])
 
-Setup(name='gcvspline',
+setup(name='gcvspline',
       version='0.4',
       description='A Python wrapper for gcvspl.f, a FORTRAN package for generalized, cross-validatory spline smoothing and differentiation.',
       url='https://github.com/charlesll/gcvspline',

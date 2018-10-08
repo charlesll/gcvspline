@@ -8,8 +8,8 @@ addons:
   apt_packages:
     - gfortran
 install:
-  - pip install runtests nose
-  - pip install numpy
+  - pip install -U setuptools wheel runtests nose
+  - pip install -U numpy
   - pip install .
 # command to run tests
 script: python runtests.py
