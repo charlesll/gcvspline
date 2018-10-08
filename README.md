@@ -1,6 +1,6 @@
 # gcvspline
 
-https://travis-ci.org/charlesll/gcvspline.svg?branch=master
+[![Build Status](https://travis-ci.org/charlesll/gcvspline.svg?branch=master)](https://travis-ci.org/charlesll/gcvspline)
 
 Python wrapper of the gcv-spl Fortran library gcvspl.f, created by H.J. Woltring.
 
