@@ -8,11 +8,11 @@ Reference: Woltring, 1986, A FORTRAN package for generalized, cross-validatory s
 
 ## Contributors:
 
-Charles Le Losq, the Australian National University (RSES), Canberra.
+Charles Le Losq, IPGP, Paris.
 
 Yu Feng, University of California, Berkeley.
 
-contact: charles.lelosq@anu.edu.au or yfeng1@berkeley.edu
+contact: lelosq@ipgp.fr or yfeng1@berkeley.edu
 
 ## Licence information
 
