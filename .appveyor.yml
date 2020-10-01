@@ -32,11 +32,27 @@ environment:
       PYTHON_VERSION: 2.7
       PYTHON_ARCH: 64
       TEST_MODE: fast
+   
+    - PYTHON: C:\Python35-x64
+      PYTHON_VERSION: 3.5
+      PYTHON_ARCH: 64
+      TEST_MODE: full
 
     - PYTHON: C:\Python36-x64
       PYTHON_VERSION: 3.6
       PYTHON_ARCH: 64
       TEST_MODE: full
+    
+    - PYTHON: C:\Python37-x64
+      PYTHON_VERSION: 3.7
+      PYTHON_ARCH: 64
+      TEST_MODE: full
+
+    - PYTHON: C:\Python38-x64
+      PYTHON_VERSION: 3.8
+      PYTHON_ARCH: 64
+      TEST_MODE: full
+
 
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
