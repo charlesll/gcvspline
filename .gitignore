@@ -19,6 +19,7 @@
 # cache files
 /.cache/
 /.pytest_cache/
+/__pycache__/
 
 # build log
 build.log
