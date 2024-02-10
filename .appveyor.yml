@@ -79,32 +79,32 @@ environment:
       PYTHON_ARCH: 64
       TEST_MODE: full
 
-    - PYTHON: C:\Python38
+    - PYTHON: C:\Python39
       PYTHON_VERSION: 3.9
       PYTHON_ARCH: 32
       TEST_MODE: full
       
-    - PYTHON: C:\Python38-x64
+    - PYTHON: C:\Python39-x64
       PYTHON_VERSION: 3.9
       PYTHON_ARCH: 64
       TEST_MODE: full
       
-    - PYTHON: C:\Python38
+    - PYTHON: C:\Python310
       PYTHON_VERSION: 3.10
       PYTHON_ARCH: 32
       TEST_MODE: full
       
-    - PYTHON: C:\Python38-x64
+    - PYTHON: C:\Python310-x64
       PYTHON_VERSION: 3.10
       PYTHON_ARCH: 64
       TEST_MODE: full
       
-    - PYTHON: C:\Python38
+    - PYTHON: C:\Python311
       PYTHON_VERSION: 3.11
       PYTHON_ARCH: 32
       TEST_MODE: full
       
-    - PYTHON: C:\Python38-x64
+    - PYTHON: C:\Python311-x64
       PYTHON_VERSION: 3.11
       PYTHON_ARCH: 64
       TEST_MODE: full
