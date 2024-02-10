@@ -79,6 +79,36 @@ environment:
       PYTHON_ARCH: 64
       TEST_MODE: full
 
+    - PYTHON: C:\Python38
+      PYTHON_VERSION: 3.9
+      PYTHON_ARCH: 32
+      TEST_MODE: full
+      
+    - PYTHON: C:\Python38-x64
+      PYTHON_VERSION: 3.9
+      PYTHON_ARCH: 64
+      TEST_MODE: full
+      
+    - PYTHON: C:\Python38
+      PYTHON_VERSION: 3.10
+      PYTHON_ARCH: 32
+      TEST_MODE: full
+      
+    - PYTHON: C:\Python38-x64
+      PYTHON_VERSION: 3.10
+      PYTHON_ARCH: 64
+      TEST_MODE: full
+      
+    - PYTHON: C:\Python38
+      PYTHON_VERSION: 3.11
+      PYTHON_ARCH: 32
+      TEST_MODE: full
+      
+    - PYTHON: C:\Python38-x64
+      PYTHON_VERSION: 3.11
+      PYTHON_ARCH: 64
+      TEST_MODE: full
+
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
   - "ECHO \"%APPVEYOR_SCHEDULED_BUILD%\""
