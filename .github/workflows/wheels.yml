@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         # macos-13 is an intel runner, macos-14 is apple silicon
-        os: [ubuntu-latest] #, windows-latest, macos-13, macos-14
+        os: [ubuntu-latest, windows-latest] #, windows-latest, macos-13, macos-14
 
     steps:
       - name: Provide gfortran (Windows)
@@ -19,7 +19,7 @@ jobs:
       - name: Tell distutils to use mingw (Windows)
         if: runner.os == 'Windows'
         run: |
-          echo "[build]`ncompiler=mingw32" | Out-File -Encoding ASCII ~/pydistutils.cfg
+          echo "[build]`ncompiler=mingw64" | Out-File -Encoding ASCII ~/pydistutils.cfg
         
       - uses: actions/checkout@v4
 

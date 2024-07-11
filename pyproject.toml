@@ -1,3 +1,26 @@
 [build-system]
 requires = ["setuptools>=44.0", "numpy>=1.12"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcvspline"
+version = "0.5"
+description = "A Python wrapper for gcvspl.f, a FORTRAN package for generalized, cross-validatory spline smoothing and differentiation."
+readme = "README.md"  # Assuming you have a README file
+authors = [
+  {name = "Charles Le Losq", email = "lelosq@ipgp.fr"},
+  {name = "Yu Feng"}
+]
+license = {text = "GNU-GPLv3"}
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.6, <3.12"
+dependencies = ["numpy>=1.12"]
