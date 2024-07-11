@@ -2,6 +2,10 @@
 
 The changes performed between the different versions are references briefly below.
 
+# v0.5
+
+- Add a minimal pyproject.toml file
+
 # v0.4
 
 - Fix of a documentation issue under Python 2.7.

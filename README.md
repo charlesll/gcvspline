@@ -8,11 +8,9 @@ Reference: Woltring, 1986, A FORTRAN package for generalized, cross-validatory s
 
 ## Contributors:
 
-Charles Le Losq, IPGP, Paris.
+Charles Le Losq, IPGP, Paris. lelosq@ipgp.fr
 
-Yu Feng, University of California, Berkeley.
-
-contact: lelosq@ipgp.fr or yfeng1@berkeley.edu
+Yu Feng, University of California, Berkeley. yfeng1@berkeley.edu
 
 ## Licence information
 
@@ -32,11 +30,7 @@ Installation through pip is recommended:
 
 	pip install gcvspline
 
-Pip wheels for Python 2.7, 3.4 and 3.6 to 3.11 are provided for Windows users (only for Python 3.6 for 32 bit systems). Mac OS and Linux version are built from source and requires gfortran.
-
-Another option for Linux 64 bits is to us Conda: 
-
-	conda install -c charlesll gcvspline=0.4
+Pip wheels for Python 3.6 to 3.11 are provided for Windows users (only for Python 3.6 for 32 bit systems). Mac OS and Linux version are built from source and requires gfortran.
 
 If the installation fails and this seems related to a problem with FORTRAN compilation, please check the status of your FORTRAN compiler.
 
